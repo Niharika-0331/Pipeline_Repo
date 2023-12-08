@@ -1,4 +1,4 @@
-@Library ('Pipeline_Repo@main')_
+@Library ('Pipeline_Repo') _
 pipeline{
     agent any
 	parameters	{
