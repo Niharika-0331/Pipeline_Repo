@@ -1,19 +1,16 @@
-@Library ('Pipeline_Repo@main')_
-pipeline{
+pipeline {
     agent any
-	parameters	{
-        string(name :'branch', defaultValue: 'main')
-	string(name :'url', defaultValue: 'https://github.com/Niharika-0331/First_Repo.git')
-	}
-	  stages {
-        stage('Git Checkout') {
+    stages {
+        stage('Debug') {
             steps {
-            script{
-            checkout_script(params)
+                script {
+                    echo "Loading Pipeline_Repo library..."
+                    def myLibrary = library('Pipeline_Repo')
+                    echo "Library contents: ${myLibrary}"
+                }
             }
-            }
-			          }
-			}
-	
-	 
+        }
+        // Add the rest of your stages here
     }
+}
+
