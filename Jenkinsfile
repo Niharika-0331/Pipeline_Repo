@@ -1,8 +1,8 @@
-@Library ('Pipeline_Repo')_
+@Library ('Pipeline_Repo@main')_
 pipeline{
     agent any
 	parameters	{
-        string(name :'branch', defaultValue: '*/main')
+        string(name :'branch', defaultValue: 'main')
 	string(name :'url', defaultValue: 'https://github.com/Niharika-0331/First_Repo.git')
 	}
 	  stages {
