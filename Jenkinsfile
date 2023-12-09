@@ -2,7 +2,7 @@
 pipeline{
     agent any
 	tools{
-		gradle('8.3')
+		gradle '8.3'
 	}
 parameters{
         string(name :'branch', defaultValue: 'main')
@@ -20,7 +20,7 @@ parameters{
             steps {
                 script {
                     // Run Gradle build command
-                    sh './gradlew -v'
+                    sh 'gradle --version'
                 }
             }
         }
