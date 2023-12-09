@@ -20,7 +20,7 @@ parameters{
             steps {
                 script {
                     // Run Gradle build command
-                    sh 'gradle --version'
+                    sh 'gradle init'
                 }
             }
         }
