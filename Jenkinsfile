@@ -9,7 +9,7 @@ pipeline{
         stage('Git Checkout') {
             steps {
             script{
-            checkout_script(params)
+            Checkout_script(params)
             }
             }
 			          }
