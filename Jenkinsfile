@@ -1,4 +1,3 @@
-@Library('Pipeline_Repo') _
 pipeline{
     agent any
     stages {
